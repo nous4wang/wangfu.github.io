@@ -1,19 +1,190 @@
----
-layout: home
-author_profile: true
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fu Wang | Homepage</title>
+  <style>
+    :root{
+      --text:#1f2328;
+      --muted:#57606a;
+      --line:#d0d7de;
+      --link:#0969da;
+      --bg:#ffffff;
+      --chip:#f6f8fa;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.55;
+    }
+    .wrap{max-width:920px; margin:36px auto; padding:0 18px;}
+    header{display:flex; gap:18px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;}
+    h1{margin:0; font-size:34px; letter-spacing:.2px;}
+    .role{margin-top:6px; color:var(--muted); font-size:15.5px;}
+    .meta{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; font-size:14.5px;}
+    .meta a{color:var(--link); text-decoration:none;}
+    .meta a:hover{text-decoration:underline;}
+    .chip{
+      background:var(--chip); border:1px solid var(--line);
+      padding:6px 10px; border-radius:999px;
+    }
+    nav{margin:26px 0 10px; display:flex; gap:14px; flex-wrap:wrap;}
+    nav a{color:var(--link); text-decoration:none; font-size:14.5px;}
+    nav a:hover{text-decoration:underline;}
+    hr{border:none; border-top:1px solid var(--line); margin:22px 0;}
+    section{margin:18px 0;}
+    h2{margin:0 0 8px; font-size:18px;}
+    ul{margin:8px 0 0; padding-left:18px;}
+    li{margin:6px 0;}
+    .two-col{display:grid; grid-template-columns: 1fr 1fr; gap:18px;}
+    @media (max-width:760px){ .two-col{grid-template-columns:1fr;} }
+    .small{color:var(--muted); font-size:13.5px;}
+    footer{margin:34px 0 12px; color:var(--muted); font-size:13px;}
+    .kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;}
+  </style>
+</head>
 
-## Fu Wang, Ph.D. (Engineering)
-Senior Engineer, Satellite Data Assimilation Division  
-CMA Earth System Modeling and Prediction Centre (CEMC), China Meteorological Administration (CMA)
+<body>
+<div class="wrap">
 
-**Email:** wangfu@cma.cn; nous.wang@gmail.com  
-**Google Scholar:** https://scholar.google.com/citations?user=e9C6DKYAAAAJ  
+  <header>
+    <div>
+      <h1>Fu Wang, Ph.D. (Engineering)</h1>
+      <div class="role">
+        Senior Engineer, Satellite Data Assimilation Division<br/>
+        CMA Earth System Modeling and Prediction Centre (CEMC), China Meteorological Administration (CMA)
+      </div>
 
-### Research Interests
-- Atmospheric remote sensing; retrieval algorithms for multispectral meteorological satellite observations  
-- Machine learning for remote sensing retrieval algorithms and weather forecasting  
-- Satellite data assimilation (wind fields, precipitation)  
-- ML-based bias correction of operational NWP  
+      <div class="meta">
+        <span class="chip">Email: <a href="mailto:wangfu@cma.cn">wangfu@cma.cn</a></span>
+        <span class="chip">Email: <a href="mailto:nous.wang@gmail.com">nous.wang@gmail.com</a></span>
+        <span class="chip">Google Scholar: <a href="https://scholar.google.com/citations?user=e9C6DKYAAAAJ" target="_blank" rel="noopener">Profile</a></span>
+        <span class="chip">ResearchGate: <a href="https://www.researchgate.net/profile/Fu-Wang-9" target="_blank" rel="noopener">Profile</a></span>
+      </div>
+      <div class="small" style="margin-top:10px;">
+        h-index: <strong>20</strong> (Google Scholar) &nbsp;|&nbsp; Publications: <strong>50+</strong> &nbsp;|&nbsp; Patents: <strong>10+</strong>
+      </div>
+    </div>
 
-➡️ For details, see: **[CV](/cv/)** | **[Publications](/publications/)** | **[Service & Awards](/service/)**  
+    <div class="small" style="min-width:240px;">
+      <div class="chip">Last updated: <span class="kbd">2026-03</span></div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#interests">Research Interests</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#impact">Research Impact</a>
+    <a href="#service">Academic Service</a>
+    <a href="#awards">Awards</a>
+    <a href="#publications">Publications</a>
+  </nav>
+
+  <hr/>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <p>
+      Fu Wang is a Senior Engineer at the CMA Earth System Modeling and Prediction Centre (CEMC), China Meteorological Administration (CMA),
+      and a World Meteorological Organization (WMO) expert. In March 2024, he was a Visiting Scholar at the Faculty of Science and Technology (FST),
+      University of Macau, conducting collaborative research on satellite data assimilation and machine learning applications in numerical weather prediction.
+    </p>
+    <p>
+      From 2015 to 2021, he worked at the National Satellite Meteorological Center (NSMC) of CMA, focusing on aerosol–cloud interactions,
+      satellite-based aerosol and cloud monitoring, water cycle processes, and the development of operational retrieval algorithms for multispectral meteorological satellite observations.
+      Since September 2021, he has been with CEMC, where his research centers on the assimilation of satellite-derived wind and precipitation observations into operational
+      numerical weather prediction (NWP) systems, along with the integration of machine learning techniques into forecasting frameworks.
+    </p>
+  </section>
+
+  <section id="interests">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Numerical Weather Prediction (NWP) and satellite data assimilation (wind fields, precipitation)</li>
+      <li>Remote-sensing retrieval algorithms for multispectral meteorological satellite observations</li>
+      <li>Machine learning for retrieval, assimilation enhancement, and operational forecasting</li>
+      <li>Atmospheric remote sensing and related Earth system applications</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <ul>
+      <li><strong>Senior Engineer</strong>, Satellite Data Assimilation Division, CMA Earth System Modeling and Prediction Centre (CEMC), China Meteorological Administration (CMA), 2021–Present</li>
+      <li><strong>Researcher / Engineer</strong>, National Satellite Meteorological Center (NSMC), China Meteorological Administration (CMA), 2015–2021</li>
+      <li><strong>Technical Staff</strong>, Earth Observation System and Data Center (EOSDC), China National Space Administration (CNSA), 2016–2018</li>
+      <li><strong>Visiting Scholar</strong>, Faculty of Science and Technology (FST), University of Macau, Mar 2024</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D. in Engineering, University of Electronic Science and Technology of China (UESTC), China, 2015</li>
+      <li>M.S. in Geoinformatics, University of Electronic Science and Technology of China (UESTC), China, 2010</li>
+      <li>B.S. in Automation, University of Electronic Science and Technology of China (UESTC), China, 2007</li>
+    </ul>
+  </section>
+
+  <section id="impact" class="two-col">
+    <div>
+      <h2>Research Impact</h2>
+      <ul>
+        <li>50+ peer-reviewed journal papers (40+ SCI-indexed)</li>
+        <li>10+ authorized Chinese invention patents</li>
+        <li>Google Scholar h-index: 20</li>
+        <li>PI for two NSFC-funded projects; contributor to multiple national and provincial research programs</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Highlights</h2>
+      <ul>
+        <li>Operational NWP-oriented satellite data assimilation (winds, precipitation)</li>
+        <li>ML-based retrieval and nowcasting frameworks</li>
+        <li>Cross-disciplinary integration of satellite observations and AI for forecasting systems</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="service">
+    <h2>Academic Service</h2>
+
+    <ul>
+      <li><strong>International scientific service:</strong> WMO Expert; Member, WMO Task Team on Earth Hydrological Network (TT-EHN), 2025–Present</li>
+      <li><strong>Consultancy:</strong> Consultant and Invited Expert, UN-ESCAP, 2021–Present</li>
+      <li><strong>Editorial service:</strong> Guest Editor, <em>Remote Sensing</em>, 2024–2026</li>
+      <li><strong>Program committee:</strong> AAAI Conference on Artificial Intelligence (AAAI), Program Committee Member, 2025</li>
+      <li><strong>Grant review:</strong> National Natural Science Foundation of China (NSFC), 2016–Present</li>
+      <li><strong>Professional memberships:</strong> IEEE Member; Member, China Computer Federation (CCF); Young Committee Member, Satellite Meteorology Committee, Chinese Meteorological Society</li>
+      <li><strong>Peer review:</strong> Reviewer for IEEE TGRS, IEEE JSTARS, IEEE GRSL, International Journal of Digital Earth, GIScience &amp; Remote Sensing, Atmospheric Environment, Atmospheric Research, etc.</li>
+      <li><strong>Commitment:</strong> Strong commitment to maintaining high standards of review quality, fairness, and efficient turnaround in peer review.</li>
+    </ul>
+  </section>
+
+  <section id="awards">
+    <h2>Awards</h2>
+    <ul>
+      <li>National Young Scientist Team Award, 2019</li>
+      <li>CMA Outstanding Numerical Weather Prediction Report Award, 2024</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>
+      A full list of refereed publications is available on
+      <a href="https://scholar.google.com/citations?user=e9C6DKYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
+    </p>
+  </section>
+
+  <footer>
+    <div>© Fu Wang. Hosted on GitHub Pages. </div>
+  </footer>
+
+</div>
+</body>
+</html>
